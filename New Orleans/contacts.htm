@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            NEW Orleans
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            display: flexbox;
+        }
+        
+        .contact-header{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        
+        .contact-header img{
+            max-width: 100%;
+            border-radius: 0px 0px 100px 0px;
+        }  
+        
+        section  a,p{
+            display: inline;
+            margin-right: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bolder;
+            font-weight: 400;
+        }
+        
+        form .into input,label{
+            height: 4rem;
+            width: 25rem;
+            margin: 1rem 5rem;
+        }
+        
+        .submit-container button{
+            background-color:rgb(0, 153, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            height: 3.5rem;
+            width: 11rem;
+            margin: 0rem 5rem;
+        }
+        
+        .submit-container button:hover{
+            background-color:rgb(3, 112, 185);
+            transition: ease 0.5s;
+        }
+        
+        section div a{
+            color: rgb(121, 121, 121);
+        }
+        
+        .marketing input{
+            margin-left: 5rem;
+            margin-right: 0rem;
+        
+        }
+        
+        .the-checkbox{
+            width: 3rem;
+            float: left;
+        }
+        
+        .the-check-label label{
+            color: rgb(129, 129, 129);
+            margin-top: 0px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        
+        .the-form{
+            width: 40rem;
+        }
+        
+        .marketing .the-checkbox,.the-check-label{
+            display: flex;
+        }
+        
+        .privacy{
+            margin-left: 5rem;
+            margin-top: 2rem;
+        }
+        .privacy-notice{
+            color: rgb(129, 129, 129);
+        }
+        
+        .contact-info{
+            padding: 0;
+            margin-top: 100px;
+            height: 60vh;
+        }
+        .contact-info-left{
+            padding: 0px 200px;
+        }
+        .contact-info-right{
+            position: absolute;
+            margin-top: 60px;
+            background-color: rgb(255, 255, 255);
+            padding:20px;
+            height: 30vh;
+            width: 45vh;
+            border-radius: 0px 0px 50px 0px;
+            float: right;
+            margin-right: 15%;
+            box-shadow: 6px 6px 6px 6px rgba(122, 122, 122, 0.103);
+            transform: translate(1000px, -600px);
+        }
+        .contact-info-right div{
+            border-bottom: solid 1px gray;
+            margin: 25px;
+        }
+        .contact-info-right div h1{
+            font-weight: 300;
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: rgb(134, 134, 134);
+        }
+        
+         @media screen and (max-width: 780px){ 
+          
+        }
+        
+        @media screen and (max-width: 380px){
+           
+        }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h3 id="logo"NEW ORLEANS</h3> 
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home.htm">home</a></li>
+                    <li><a href="about.htm">about</a></li>
+                    <li><a href="lifestyle.htm">lifestyle</a></li>
+                    <li><a href="contacts.htm" id="active">contacts</a></li>
+                    <li><a href="feedback.htm">feedback</a></li>
+                </ul>
+            </nav>
+            <div class="intr">
+               
+            </div>
+        </header>
+        <section>
+            <div style="height: 10vh;"></div>
+            <div style="height: 7vh;"><a href="home.htm">To New Orleans ></a><p> contact us ></p>
+            </div>
+            <p  style="margin: 50px 0px; margin-left: 110px; font-size: 60px; font-weight: 400;">Get in contact with us</p>
+            <div class="contact-header"><img src="./image/NOTMC_21352_18185565-1742-49ca-beb1-c1e4cce47eec.jpg" alt="">
+            </div>
+            <div class="the-form">
+                <form action="input">
+                    <div class="into">
+                        <label for="Name">Name</label>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div  class="into">
+                        <label for="Email">Email address</label>
+                        <div>
+                            <input type="email">
+                        </div>
+                    </div>
+                    <div  class="into">
+                        <label for="Zip code">Zip Code</label>
+                        <div>
+                            <input type="Zip Code">
+                        </div>
+                    </div>
+                    <div  class="into">
+                        <label for="Message">Message</label>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="marketing">
+                            <div class="the-checkbox">
+                                <input type="checkbox" name="marketing" id="checkbox-marketing">
+                            </div>
+                            <div class="the-check-label">
+                                <label for="checkbox">The official website for the New Orleans tourism industry, NewOrleans.com is produced and managed by New Orleans & Company (formerly the New Orleans Convention and Visitors Bureau) - a non-profit organization who promote New Orleans as a premier travel destination.</label>
+                            </div>        
+                    </div>    
+                    <div class="submit">
+                        <div class="submit-container">
+                            <button>Summit</button>
+                        </div>
+                    </div>    
+                    <div class="privacy">
+                        <div class="privacy-notice">
+                            <p>All informtion will be handled in accordence to our privacy</p><a href="#" style="text-decoration: underline; color: rgb(87, 178, 238); font-weight: 300;">policy</a>
+                        </div>
+                    </div>   
+                </form>
+            </div>        
+        </section>
+        <div class="contact-bottom">
+                <div class="contact-info">
+                    <div style="width:500px;
+                    margin-left: 300px;
+                    margin-bottom: 30px;">
+                        <h1 style="margin-bottom: 10px;">Contact Us</h1>
+                        <p>Need any assistance? Get in contact with us directly we will be glad to help.</p>
+                   </div>
+                    <div class="contact-info-left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d221064.11607259745!2d-90.02265146133404!3d30.033219496827424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2sNew%20Orleans%2C%20LA%2C%20USA!3m2!1d29.9510658!2d-90.0715323!5e0!3m2!1sen!2sza!4v1622159674133!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </iframe>
+                    <div class="contact-info-right">
+                        <div>
+                            <h1>location</h1>
+                            <aside>southeastern Louisiana, U.S.</aside>
+                        </div>
+                        <div>
+                            <h1>Working ours:</h1>
+                            <aside>Monday - Friday 08:00 - 17-00</aside>
+                        </div>
+                        <div>
+                            <h1>Call Us:</h1>
+                            <aside style="color: rgb(0, 153, 255);"> 800-672-6124</aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer style="margin-top: 100px;">
+                <div class="footer-top">
+                    <div class="div-left">
+                        <h2>find us</h2s>
+                        <ul>
+                           <li><a href="#"><img src="icon/facebook.png" alt="facebook"></a></li>
+                           <li><a href="#"><img src="icon/instagram.png" alt="instagram"></a></li>
+                           <li><a href="#"><img src="icon/gmail.png" alt="google+"></a></li>
+                           <li><a href="#"><img src="icon/twitter.png" alt="twitter"></a></li>
+                        </ul>
+                 </div>
+                    <div class="div-right">
+                        <h2 >More information</h2>
+                        <ul>
+                            <li><a href="#">CALENDAR</a></li>
+                            <li><a href="contacts.htm">CONTACT US</a></li>
+                            <li><a href="#">COMMUNITY</a></li>
+                            <li><a href="#">TRAVEL PROFESSIONALS</a></li>
+                       </ul>
+                 </div>
+                    <div><form action=""></form></div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2021 NEWORLEANS.COM ALL RIGHTS RESERVED.</p>
+                </div>
+             </footer>
+        <script src="./app.js"></script>
+    </body>
+</html>

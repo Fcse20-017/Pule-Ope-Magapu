@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            New Orleans
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .heading{
+            font-size: 40px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        
+        .about-images-container{
+            float: left;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        .image-content-module{
+            width: 100%;
+        }
+         .image-row-container{
+             width: 100%;
+         }
+        
+         .image-container{
+             float: left;
+             width: 350px;
+             margin: 0px 1%;
+             height: 550px;
+             background-color: white;
+             box-shadow: 4px 4px 9px 4px rgba( 122, 122, 122,  0.4);
+         }
+        
+        .image-con-top{
+            width: 100%;
+        }
+        
+        .image-con-top img{
+            width: 100%;
+        }
+        
+        .image-con-down{
+            padding: 20px;
+        }
+        
+        .image-con-down h1{
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        
+        .about-bottom{
+            width: 100%;
+            height: 30vh;
+        }
+        
+        .about-bottom-content{
+            background-image:url("image/download.jpg");
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            float: left;
+            margin-bottom: 50px;
+        }
+        
+        .about-bottom-left{
+            width: 50vh;
+        }
+        .about-bottom-left img{
+            margin-left: 100px ;
+            width: 100%;
+        }
+        
+        .about-bottom-mid{
+            margin-top: 4.4%;
+            margin-left: -3px ;
+            padding: 50px;
+            width: 60vh;
+            height: 25vh;
+            background-color:  rgb(0, 153, 255);
+            border-radius: 100px 0px 100px 0px;
+        }
+
+        .about-bottom-mid h1,span,a{
+            color: white;
+            margin-top: 30px;
+        }
+
+        .about-bottom-mid a{
+            text-decoration: none;
+            line-height: 100px;
+            border: solid 2px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .about-bottom-mid span{
+            line-height: 20px;
+        }
+        
+        .about-bottom-right{
+            width: 10%;
+        }
+
+        @media screen and (max-width: 900px){
+            header{
+            height: 5vh;
+           }
+           .header-img img{
+               border-radius: 0px;
+           }
+           .intro{
+              display: none;
+              margin-top: 200px;
+              background:rgb(206, 65, 65);
+              position: flex;
+              width: 100%;
+              height: 22rem;
+              transform: translate( 0, 0);
+              transition: none;   
+              border-radius: 0px; 
+              box-shadow: none;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h3 id="logo">NEW ORLEANS</h3> 
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" id="active">home</a></li>
+                    <li><a href="about.htm">about</a></li>
+                    <li><a href="lifestyle.htm">lifestyle</a></li>
+                    <li><a href="contacts.htm">contacts</a></li>
+                    <li><a href="feedback.htm">feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+        
+            <div class="the-header">
+                <div class="header-img">
+                    <img src="./image/Wendell_Desk_.jpg"alt="">
+                </div>
+                <div class="controls">
+                        <div class="play-button" onclick="togglePlay()">
+                            <div class="play">
+                                <div class="play-icon"></div>
+                                <div class="line-1"></div>
+                                <div class="line-1"></div>
+                            </div>                            
+                        </div>
+                    </div>  
+                <div class="vid">
+                    <video src="./vid/dubai-intro.webm" id="video" class="video" loop></video>
+                </div>
+            </div>
+            <div class="container">
+            <p id="first" style="margin-bottom: 50px;">Welcome</p>
+          <div class="section-cards">
+            <div class="about-images-container">
+                <div class="image-content-module">
+                    <h1 class="heading">Things to do in New Orleans</h1>
+                    <div class="image-row-container">
+                        <div class="image-container">
+                            <div class="image-con-top">
+                                <img src="./image/How One Visit to.jpg" alt="">
+                            </div>
+                            <div class="image-con-down">
+                                <h1>Where to stay in New Orleans</h1>
+                                <p>New Orleans is known for its palatial hotels and five-star beach resorts, but there is a good selection of hotels and apartments to suit all budgets.</p>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <div class="image-con-top">
+                                <img src="./image/Frenchmen Street _ New Orleans Streets to Visit.png" alt="">
+                            </div>
+                            <div class="image-con-down">
+                                <h1>New Orleans feel-good music playlist</h1>
+                                <p>Keep your head up with our New Orleans Feel-Good Spotify Playlist</p>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <div class="image-con-top">
+                                <img src="./image/Barracuda_tacos_new_orleans_new_restaurants_.jpg" alt="">
+                            </div>
+                            <div class="image-con-down">
+                                <h1>Where to eat in New Orleans</h1>
+                                <p>In a city known for its cuisine, a great meal doesn’t have to break the bank. Here are our top picks for budget bites.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-bottom">
+                <div class="about-bottom-content">
+                    
+                    
+                    <div class="about-bottom-right"></div>
+                </div>
+            </div>
+            <div class="about-images-container">
+                <div class="image-content-module">
+                    <h1 class="heading">Drink</h1>
+                    <div class="image-row-container">
+                        <div class="image-container">
+                            <div class="image-con-top">
+                                <img src="./image/pic.jpg" alt="">
+                            </div>
+                            <div class="image-con-down">
+                                <h1>Where to drink in New Orleans</h1>
+                                <p>Have your libations with a side of sweeping views and selfie-worthy backdrops at these swanky and stylish rooftop watering holes.</p>
+                            </div>
+                        </div>
+                            <div class="image-con-down">
+                                <h1>FRENCH QUARTER COCKTAIL CRAWL</h1>
+                                <p>Explore your way through the French Quarter’s many bars with our guided cocktail crawl.</p>
+                            </div>
+                            <div class="image-con-down">
+                                <h1></h1>
+                                <p>New Orleanians aren’t always a serious lot, but when it comes to football, we don’t mess around. The city holds its breath when the Saints are on the field at home or away, with a Who Dat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <footer style="margin-top: 100px;">
+            <div class="footer-top">
+                <div class="div-left">
+                    <h2>find us</h2s>
+                    <ul>
+                       <li><a href="#"><img src="icon/facebook.png" alt="facebook"></a></li>
+                       <li><a href="#"><img src="icon/instagram.png" alt="instagram"></a></li>
+                       <li><a href="#"><img src="icon/gmail.png" alt="google+"></a></li>
+                       <li><a href="#"><img src="icon/twitter.png" alt="twitter"></a></li>
+                    </ul>
+             </div>
+                <div class="div-right">
+                    <h2 >More information</h2>
+                    <ul>
+                        <li><a href="#">CALENDAR</a></li>
+                        <li><a href="contacts.htm">CONTACT US</a></li>
+                        <li><a href="#">COMMUNITY</a></li>
+                        <li><a href="#">TRAVEL PROFESSIONALS</a></li>
+                   </ul>
+             </div>
+                <div><form action=""></form></div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2021 NEWORLEANS.COM ALL RIGHTS RESERVED.</p>
+            </div>
+         </footer>
+        <script src="./app.js"></script>
+    </body>
+</html>
